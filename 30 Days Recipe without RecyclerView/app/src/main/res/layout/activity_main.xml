@@ -1,0 +1,1513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Title TextView -->
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="30 Days of Recipes"
+                android:textSize="30sp"
+                android:textColor="@color/purple"
+                android:fontFamily="@font/amaranth_bold"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:gravity="center"
+                android:padding="16dp"/>
+
+            <!-- Day 1 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 1"
+                        android:textColor="@color/purple"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Easy One-Pan Dinners"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day1" />
+
+                    <TextView
+                        android:id="@+id/descriptionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Start simple with a one-pan meal like roasted chicken with vegetables. Toss chicken thighs, potatoes, and carrots in olive oil, garlic, and rosemary, then bake for 40 minutes."
+                        android:textSize="20sp"
+                        android:fontFamily="@font/lato"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 2 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 2"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Quick Pasta Fix"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day2" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Try a 15-minute garlic butter pasta with spinach. Sauté garlic in butter, toss in cooked pasta, spinach, and parmesan for a deliciously simple meal."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 3 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 3"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Fresh Salad"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day3" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Make a refreshing Greek salad. Combine tomatoes, cucumbers, olives, feta, and a drizzle of olive oil with lemon juice and oregano."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 4 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 4"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Comfort Soups"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day4" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create a hearty minestrone soup with beans, pasta, and vegetables simmered in a tomato-based broth."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 5 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 5"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Meatless Mondays"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day5" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prepare a satisfying vegetable stir-fry with tofu. Stir-fry bell peppers, broccoli, and tofu in a soy-ginger sauce."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 6 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 6"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Breakfast Anytime"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day6" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Whip up an easy shakshuka with poached eggs in a spicy tomato sauce, perfect for breakfast or dinner."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 7 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 7"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Mexican Night"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day7" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Make chicken fajitas by sautéing onions, bell peppers, and chicken strips in fajita seasoning. Serve with warm tortillas."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 8 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 8"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Mediterranean Delights"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day8" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enjoy a Mediterranean grain bowl with quinoa, roasted vegetables, hummus, and a drizzle of tahini dressing."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 9 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 9"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Sheet Pan Magic"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day9" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Roast salmon and asparagus with lemon and garlic for an easy, healthy sheet pan dinner."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 10 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 10"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Cozy Casseroles"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day10" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bake a creamy tuna noodle casserole with pasta, peas, and a crunchy breadcrumb topping."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 11 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 11"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Asian-Inspired"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day11" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cook a simple sesame ginger stir-fry with shrimp, broccoli, and snow peas."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 12 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 12"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Taco Tuesday"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day12" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Assemble fish tacos with grilled fish, a cabbage slaw, and a squeeze of lime."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 13 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 13"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Slow Cooker Comfort"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day13" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Set your slow cooker to make beef stew. Combine chunks of beef, potatoes, carrots, and broth, and let it cook slowly for tender results."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 14 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 14"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Light and Fresh"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day14" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay14"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Enjoy a refreshing cucumber and avocado salad with lime dressing."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 15 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 15"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Italian Classics"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day15" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay15"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cook a classic spaghetti carbonara with pancetta, eggs, and parmesan."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 16 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 16"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Weeknight Pizza"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day16" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay16"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create a quick homemade pizza using pre-made dough, tomato sauce, mozzarella, and your favorite toppings."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 17 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 17"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="5-Ingredient Recipes"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day17" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay17"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Try an easy chicken piccata with lemon, capers, butter, and a side of pasta."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 18 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 18"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Asian Noodles"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day18" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay18"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Make peanut noodles by tossing soba noodles in a creamy peanut butter and soy sauce dressing, topped with shredded carrots."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 19 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 19"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Soup and Sandwiches"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day19" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay19"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Pair a grilled cheese sandwich with tomato soup for the ultimate comfort food combo."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 20 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 20"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Healthy Bowls"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day20" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Build a healthy grain bowl with brown rice, black beans, avocado, corn, and salsa."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 21 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 21"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Kid-Friendly Meals"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day21" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay21"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Prepare a fun homemade mac and cheese with a creamy cheese sauce and crispy breadcrumb topping."
+                        android:textSize="20sp"
+                        android:fontFamily="@font/lato"/>
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 22 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 22"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="French-Inspired"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day22" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay22"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cook a classic coq au vin, braising chicken in red wine with mushrooms and onions."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 23 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 23"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Mediterranean Appetizers"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day23" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Serve a mezze platter with hummus, baba ghanoush, olives, and pita."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 24 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 24"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Instant Pot Magic"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day24" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Make an Instant Pot chicken curry with coconut milk, curry powder, and tender chicken."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 25 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 25"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Vegan Delights"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day25" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Cook a hearty lentil stew with tomatoes, spinach, and plenty of spices."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 26 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 26"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Brunch Favorites"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day26" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bake fluffy blueberry pancakes, perfect for a weekend brunch."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 27 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 27"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Italian Comfort"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day27" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Create a rich lasagna with layers of ricotta, mozzarella, marinara, and ground beef."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 28 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 28"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Mediterranean Wraps"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day28" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Make a falafel wrap with crispy falafel, lettuce, tomatoes, and tzatziki in pita bread."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 29 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 29"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Sweet Treats"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day29" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Bake a simple batch of chocolate chip cookies for dessert."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+
+            <!-- Day 30 Content -->
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@color/cream">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/titleTextDay30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth"
+                        android:text="Day 30"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/headerTextDay30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/amaranth_bold"
+                        android:text="Global Fusion"
+                        android:textColor="@color/black"
+                        android:textSize="30sp" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="355dp"
+                        android:src="@drawable/day30" />
+
+                    <TextView
+                        android:id="@+id/descriptionTextDay30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Try Korean BBQ tacos with grilled marinated beef, kimchi, and spicy mayo."
+                        android:fontFamily="@font/lato"
+                        android:textSize="20sp" />
+                </LinearLayout>
+            </FrameLayout>
+<!--end -->
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

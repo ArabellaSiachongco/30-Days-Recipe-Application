@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.Samplescroll" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary colors -->
+        <item name="colorPrimary">@color/pastel_primary</item>
+        <item name="colorPrimaryVariant">@color/pastel_primary_variant</item>
+
+
+        <!-- Background and Surface -->
+        <item name="android:colorBackground">@color/pastel_background</item>
+        <item name="colorSurface">@color/pastel_surface</item>
+    </style>
+</resources>
